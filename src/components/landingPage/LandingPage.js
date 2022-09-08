@@ -21,8 +21,8 @@ const LandingPage = () => {
          
         {loggedIn?<LoggedInHeader/>:<Header/>}
           <Routes>
-            <Route path='/ecommerce-portoflio-front-end-' element={loggedIn?<Store/>:<HomePage/>}/>
-            <Route path='/ecommerce-portoflio-front-end-/products' element={<Products/>}/>
+            <Route path='ecommerce-portoflio-front-end-' element={loggedIn?<Store/>:<HomePage/>}/>
+            <Route path='ecommerce-portoflio-front-end-/products' element={<Products/>}/>
             <Route path='/ecommerce-portoflio-front-end-/signin' element={<SignInPage/>}/>
             <Route path='/ecommerce-portoflio-front-end-/signup' element={<SignUpPage/>}/>
             <Route path='/ecommerce-portoflio-front-end-/cart' element={loggedIn?<Cart/>:<SignInPage/>}/>
