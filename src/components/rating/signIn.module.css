@@ -1,0 +1,28 @@
+.signIn{
+    margin: auto;
+     margin-top: 10%;
+    
+    padding: 2rem;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to bottom right,#1d2026,#9498a2,#1d2026);
+    border-radius: 15px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;*/
+    
+}
+.form{
+    display:flex;
+    
+   
+}
+@media (max-width:438px){
+    .signIn{
+        width: 98%;
+        height: 100%;
+        /* margin: 1%; */
+    }
+      
+    }

@@ -1,0 +1,81 @@
+.checkOut{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.finish{
+    margin: 15% auto;
+   
+    align-items: center;
+    padding: 3rem;
+    color: green;
+    width: 400px;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right,white,#53e853,white,#53e853,white,#53e853);
+    background-size: 200% 200%;
+    animation: wave .5s linear;
+}
+
+@keyframes wave{
+    0%{
+        background-position: 0 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+  }
+.delivery{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-right:solid 1px #c3c3c3 ;
+}
+.error{
+    color: red;
+}
+.table{
+    width: 100%;
+    margin: auto;
+    
+}
+.table table{
+    width: 50%;
+    color: white;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto; border-radius: 15px;
+    font-size: 1.2rem;
+}
+.table table,th, tr,td{
+    border: solid 1px #63b96a;
+    border-radius: 5px;
+   
+}
+.table th{
+    background: linear-gradient(green 30% ,black ,green )
+}
+.table th, td{
+    padding: 1rem;
+}
+.table tr:nth-child(odd){
+    background: linear-gradient(to bottom right,green 30% ,black ,green )
+}
+.table tr:nth-child(even){
+    background: linear-gradient(to bottom right,black 30% ,green ,black )
+}
+.table tr:last-child td{
+    text-align: right;
+    font-weight: 800;
+    background: linear-gradient(black 30% ,green ,black )
+}
+
+@media screen and (max-width:438px){
+    .checkOut{
+        flex-direction: column;
+    }
+    .delivery{
+        margin: 2%;
+        border: none;
+    }
+}

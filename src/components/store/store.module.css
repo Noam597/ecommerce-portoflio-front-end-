@@ -1,0 +1,22 @@
+.merch{
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+@media (max-width:1024px){
+
+    .merch{
+        height: 100%;
+        grid-template-columns: auto auto ;
+    }
+
+}
+
+@media screen and (max-width:438px){
+    .merch{
+        height: 100vh;
+        grid-template-columns: auto ;
+    }
+}

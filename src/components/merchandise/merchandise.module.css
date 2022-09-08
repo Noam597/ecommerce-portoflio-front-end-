@@ -1,0 +1,57 @@
+.merch{
+    position: relative;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 100%;
+}
+.merch_slider{
+    display: flex;
+    width: calc(250px * 6);
+    animation: scroll 40s linear infinite;
+}
+.merch_slider:hover{
+    animation-play-state: paused;
+
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 3));
+    }
+}
+
+.merch::before,
+.merch::after{
+    background: linear-gradient(to right, rgb(80, 80, 80)0%,
+    rgba(255, 255, 255, 0)100% );
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 7%;
+    z-index: 2;
+}
+.merch::before{
+    left: 0;
+    top: 0;
+}
+.merch::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+
+
+
+@media (max-width:438px){
+    .merch{
+        flex-direction: column;
+    }
+      
+    }

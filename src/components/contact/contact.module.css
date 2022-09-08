@@ -1,0 +1,30 @@
+.contact{
+    width: 100%;
+
+    display: flex;
+
+}
+.contactForm{
+
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+    
+    
+}
+.line{
+    border-right: solid 1px silver;
+  
+}
+.contactForm h2{
+    margin: 2rem;
+}
+@media (max-width:438px) {
+
+    .contact{
+        flex-direction: column;
+    }
+}
