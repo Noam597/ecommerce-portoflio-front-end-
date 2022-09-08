@@ -21,12 +21,12 @@ const LandingPage = () => {
          
         {loggedIn?<LoggedInHeader/>:<Header/>}
           <Routes>
-            <Route path='/' element={loggedIn?<Store/>:<HomePage/>}/>
-            <Route path='/products' element={<Products/>}/>
-            <Route path='/signin' element={<SignInPage/>}/>
-            <Route path='/signup' element={<SignUpPage/>}/>
-            <Route path='/cart' element={loggedIn?<Cart/>:<SignInPage/>}/>
-            <Route path='/checkout' element={loggedIn?<CheckOutPage/>:<SignInPage/>}/>
+            <Route path='/ecommerce-portoflio-front-end-' element={loggedIn?<Store/>:<HomePage/>}/>
+            <Route path='ecommerce-portoflio-front-end-/products' element={<Products/>}/>
+            <Route path='ecommerce-portoflio-front-end-/signin' element={<SignInPage/>}/>
+            <Route path='ecommerce-portoflio-front-end-/signup' element={<SignUpPage/>}/>
+            <Route path='ecommerce-portoflio-front-end-/cart' element={loggedIn?<Cart/>:<SignInPage/>}/>
+            <Route path='ecommerce-portoflio-front-end-/checkout' element={loggedIn?<CheckOutPage/>:<SignInPage/>}/>
             <Route path='*' element={<ErrorPage/>}/>
           </Routes>
   
