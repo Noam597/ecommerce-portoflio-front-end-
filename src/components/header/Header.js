@@ -21,10 +21,10 @@ const Header = () => {
             setMenu(!menu)
           }}>
 
-            <li onClick={()=>{navigate('/')}}>HOME</li>
-            <li onClick={()=>{navigate('/products')}}>PRODUCTS</li>
-            <li onClick={()=>{navigate('/signin')}}>SIGN IN </li>
-            <li><Button text="SIGN UP" onClick={()=>{navigate('/signup')}}/></li>
+            <li onClick={()=>{navigate('/ecommerce-portoflio-front-end-')}}>HOME</li>
+            <li onClick={()=>{navigate('/ecommerce-portoflio-front-end-/products')}}>PRODUCTS</li>
+            <li onClick={()=>{navigate('/ecommerce-portoflio-front-end-/signin')}}>SIGN IN </li>
+            <li><Button text="SIGN UP" onClick={()=>{navigate('/ecommerce-portoflio-front-end-/signup')}}/></li>
           </ul>
         </div>
           <button className={styles.menuButton} onClick={()=>{ setMenu(!menu)  }}>

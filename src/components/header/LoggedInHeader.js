@@ -35,20 +35,20 @@ const LoggedInHeader = () => {
     }
  
     const toCheckout = ()=>{
-      navigate('/checkout')
+      navigate('/ecommerce-portoflio-front-end-/checkout')
       setShoppingMenu(false)
       
     }
 
   return (
     <nav className={styles.header}>
-        <h1 onClick={()=>{navigate('/')}}>Tech-S</h1>
+        <h1 onClick={()=>{navigate('/ecommerce-portoflio-front-end-')}}>Tech-S</h1>
          <div className={`${styles.nav} ${menu && `${styles.menu}`}`}>
           
           <ul  onClick={()=>{
             setMenu(!menu)
           }}>
-            <li onClick={()=>{navigate('/')}}>STORE</li>
+            <li onClick={()=>{navigate('/ecommerce-portoflio-front-end-')}}>STORE</li>
             <li><div className={styles.cartS} ><div onClick={dropCart}><span><FaShoppingCart/></span></div>
            {cart.length > 0 &&  <div className={styles.cartN}>{cart.length}</div>}
            
