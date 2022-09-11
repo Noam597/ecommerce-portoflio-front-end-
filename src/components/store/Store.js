@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { ShoppingCart } from '../contexts&reducers/CartContext'
 import { CartProductCard } from '../productCard/ProductCard'
 import { Button, SecondButton } from '../button/Button'
@@ -11,11 +11,16 @@ const Store = () => {
     const {state:{ prod,cart },
                     addToCart,
                   removeFromCart,
+                  setTotal,
                     navigate}=ShoppingCart()
     
 
 
-
+                    useEffect(() => {
+    
+                      setTotal(cart.reduce((acc,curr)=>acc + Number(curr.price) * curr.qty,0))
+                  
+                    }, [cart,setTotal])
     
   return (
     <section className={styles.store}>
@@ -28,8 +33,8 @@ const Store = () => {
             {prod.map((item,index)=>{
               return <div key={index}>
                 <CartProductCard
-                  prod={item}
                   cart={cart}
+                  prod={item}
                   onClick={()=>{addToCart(item)}}
                   remove={()=>{removeFromCart(item)}}/>
         </div>})}

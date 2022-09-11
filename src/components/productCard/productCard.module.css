@@ -51,11 +51,16 @@
 }
 @media (max-width:438px){
     .product{
-        width: 80%;
+        width: 90%;
         margin: 5%;
+        text-align: center;
+        padding: 1rem;
+    }
+    .product h3{
+        font-size: .8rem;
     }
     .productImg{
-        width: 150px;
-        height: 150px;
+        width: 75px;
+        height: 75px;
     }
     }
