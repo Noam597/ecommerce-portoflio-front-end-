@@ -34,7 +34,7 @@ const SignInPage = () => {
         if(newUser[i].userName === signIn.userName
            && newUser[i].password === signIn.password){
           userLoggedIn()
-          navigate('/')
+          navigate('/ecommerce-portoflio-front-end-')
         }else{
           console.log('incorrect')
         }
@@ -47,7 +47,7 @@ const SignInPage = () => {
   }
 
   return (
-    <section  style={{height:'100vh'}}>
+    <section  style={{height:'100%'}}>
   
        <Form title={'Sign In'}>
        <Input
@@ -67,8 +67,8 @@ const SignInPage = () => {
          {errors.userName && <h5 className={styles.error}>{errors.password}</h5>}
         <Button text='Sign In' onClick={submit}/>
         <h3 className={styles.error}>{noUser}</h3>
-        <p onClick={()=>{navigate('/')}}><u>Back to Home Page</u></p>
-        <p onClick={()=>{navigate('/signup')}}>Not A member? <u>Click Here to Sign Up</u></p>
+        <p onClick={()=>{navigate('/ecommerce-portoflio-front-end-')}}><u>Back to Home Page</u></p>
+        <p onClick={()=>{navigate('/ecommerce-portoflio-front-end-/signup')}}>Not A member? <u>Click Here to Sign Up</u></p>
        
     </Form>
     </section>

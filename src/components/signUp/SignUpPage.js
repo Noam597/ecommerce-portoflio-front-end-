@@ -49,7 +49,7 @@ const SignUpPage = () => {
     <h2>You've Signed In Successfully</h2>
     <h3>Welcome Aboard!</h3>
     </div>
-    <p onClick={()=>{navigate('/signin')}}><u>Click Here To Log In</u></p>
+    <p onClick={()=>{navigate('/ecommerce-portoflio-front-end-/signin')}}><u>Click Here To Log In</u></p>
   </Form>:
     <Form title={'Sign Up'}>
       
@@ -76,8 +76,8 @@ const SignUpPage = () => {
          placeholder='Enter Email'/>
          {errors.email && <h5 className={styles.error}> * {errors.email}</h5>}
         <Button text='SUBMIT' onClick={submit}/>
-        <p onClick={()=>{navigate('/')}}><u>Back to Home Page</u></p>
-        <p onClick={()=>{navigate('/signin')}}>Already A Member? <u>Click Here to Log In</u></p>
+        <p onClick={()=>{navigate('/ecommerce-portoflio-front-end-')}}><u>Back to Home Page</u></p>
+        <p onClick={()=>{navigate('/ecommerce-portoflio-front-end-/signin')}}>Already A Member? <u>Click Here to Log In</u></p>
     </Form>}
     </section>
   )

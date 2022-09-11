@@ -22,8 +22,8 @@ const imgURL='https://images.unsplash.com/photo-1515343480029-43cdfe6b6aae?ixlib
       <p>Portfolio</p>
       <h1>E-commerce</h1>
       <div className={styles.btnHolder}>
-      <div onClick={()=>{navigate('/products')}} className={`${styles.btn} ${styles.products}`}>Products</div>
-      <div onClick={()=>{navigate('/signin')}} className={`${styles.btn} ${styles.signIn}`}>Sign in</div>
+      <div onClick={()=>{navigate('ecommerce-portoflio-front-end-/products')}} className={`${styles.btn} ${styles.products}`}>Products</div>
+      <div onClick={()=>{navigate('ecommerce-portoflio-front-end-/signin')}} className={`${styles.btn} ${styles.signIn}`}>Sign in</div>
       </div>
       </div>
     </section>

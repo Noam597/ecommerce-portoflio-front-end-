@@ -12,7 +12,7 @@ const Merchandise = () => {
       <div>
       <div className={styles.merch_slider}> 
       {productSlider.map((product,i)=>{
-        return <div key={i} onClick={()=>{navigate('/products')}}>
+        return <div key={i} onClick={()=>{navigate('/ecommerce-portoflio-front-end-/products')}}>
             <ProductCard
             prod={product}
             text='More Info'/>
