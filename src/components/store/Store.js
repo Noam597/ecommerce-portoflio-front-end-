@@ -21,8 +21,8 @@ const Store = () => {
       
         <h1>STORE</h1>
         {cart.length > 0 ?<div className={styles.buttons}> 
-            <Button text='CART'  onClick={()=>{navigate('/cart')}}/>
-            <Button text='Checkout'  onClick={()=>{navigate('/checkout')}}/>
+            <Button text='CART'  onClick={()=>{navigate('/ecommerce-portoflio-front-end-/cart')}}/>
+            <Button text='Checkout'  onClick={()=>{navigate('/ecommerce-portoflio-front-end-/checkout')}}/>
              </div>:<SecondButton text='Cart Empty'/>}
         <div className={styles.merch}>
             {prod.map((item,index)=>{
