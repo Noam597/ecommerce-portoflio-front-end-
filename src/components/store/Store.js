@@ -20,10 +20,10 @@ const Store = () => {
     <section>
       
         <h1>STORE</h1>
-        {cart.length > 0 ?<> 
+        {cart.length > 0 ?<div className={styles.buttons}> 
             <Button text='CART'  onClick={()=>{navigate('/cart')}}/>
             <Button text='Checkout'  onClick={()=>{navigate('/checkout')}}/>
-             </>:<SecondButton text='Cart Empty'/>}
+             </div>:<SecondButton text='Cart Empty'/>}
         <div className={styles.merch}>
             {prod.map((item,index)=>{
               return <div key={index}>

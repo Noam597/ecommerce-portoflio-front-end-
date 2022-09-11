@@ -40,11 +40,20 @@
 .secondary:hover{
     background-color:var(--secondaryHover)
 }
-
+@media (max-width:1024px){
+    .button{
+       
+    width:70%;
+    margin: auto;
+    font-size: .75rem;
+    }
+   
+}
 @media (max-width:438px){
     .button{
     width:50%;
     margin: auto;
+    font-size: .75rem;
     }
    
 }

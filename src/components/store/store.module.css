@@ -11,12 +11,20 @@
         height: 100%;
         grid-template-columns: auto auto ;
     }
+    .buttons{
+        width: 100%;
+        display: flex;
+        justify-content:space-around;
+    }
+    .buttons button{
+        width: 25%;
+    }
 
 }
 
 @media screen and (max-width:438px){
     .merch{
-        height: 100vh;
+        height: 100%;
         grid-template-columns: auto ;
     }
 }
