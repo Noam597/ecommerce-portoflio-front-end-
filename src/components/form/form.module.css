@@ -1,6 +1,7 @@
 .formContent{
     margin: auto;
      margin-top: 10%;
+     margin-bottom: 10%;
     padding: 2rem;
     width: 400px;
     flex-direction: column;

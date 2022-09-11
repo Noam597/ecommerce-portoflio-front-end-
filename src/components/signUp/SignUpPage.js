@@ -42,7 +42,7 @@ const SignUpPage = () => {
     } 
 
   return (
-    <section  style={{height:'100vh'}}  onSubmit={submit}>
+    <section  style={{height:'100%'}}  onSubmit={submit}>
  {isSignedUp?<Form>
   <div className={styles.success}>
     <h1><AiOutlineCheckCircle/></h1>

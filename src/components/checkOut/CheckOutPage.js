@@ -58,7 +58,7 @@ const [deliveryForm, setDeliveryForm] = useState({
    
 
   return (<section style={{height:'100%'}}>
-     <Button text='Back to Cart' onClick={()=>navigate('/')}/>
+     <Button text='Back to Cart' onClick={()=>navigate('/ecommerce-portoflio-front-end-/cart')}/>
      {sent? <div className={styles.finish}>
         <h1><AiOutlineCheckCircle/></h1>
         <h1>YOUR ORDER HAS BEEN SENT</h1>
