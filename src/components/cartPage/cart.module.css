@@ -57,7 +57,7 @@
 }
 @media screen and (max-width:438px){
     .cartContainer{
-        height: 100vh;
+        height: 100%;
         grid-template-columns: auto ;
     }
     .inCart{

@@ -56,7 +56,7 @@ const LoggedInHeader = () => {
               {cart.map((cartProd)=>{
                 return <div className={styles.cartListInner} key={cartProd.id}>
                         <div className={styles.cartListImg}>
-                          <img src={cartProd.image} alt=''/>
+                          <img src={`/${cartProd.image}`} alt='products'/>
                       </div>
                        <div>
                       <p>{cartProd.product}</p>

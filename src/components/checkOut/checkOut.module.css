@@ -75,7 +75,7 @@
         flex-direction: column;
     }
     .delivery{
-        margin: 2%;
+        /* margin: 2%; */
         border: none;
     }
 }

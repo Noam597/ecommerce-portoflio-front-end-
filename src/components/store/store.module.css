@@ -1,9 +1,16 @@
+.store{
+    position: relative;
+}
+
+
 .merch{
     margin: auto;
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
-
+.ShoppingButton{
+    display: none;
+}
 
 @media (max-width:1024px){
 
@@ -26,5 +33,20 @@
     .merch{
         height: 100%;
         grid-template-columns: auto ;
+    }
+    .buttons{
+        display: none;
+    }
+    .ShoppingButton{
+        display: block;
+        position: fixed;
+        bottom: 2.5rem;
+        right: 3rem;
+    }
+    .ShoppingButton button{
+       padding: 1rem;
+       border: none;
+       background-color: #63b96a;
+       border-radius: 2rem;
     }
 }

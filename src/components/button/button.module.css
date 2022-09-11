@@ -51,9 +51,9 @@
 }
 @media (max-width:438px){
     .button{
-    width:50%;
+    width:60%;
     margin: auto;
-    font-size: .75rem;
+    font-size: 1rem;
     }
    
 }

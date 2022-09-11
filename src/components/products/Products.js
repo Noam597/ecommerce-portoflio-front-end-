@@ -39,7 +39,7 @@ const Products = () => {
           clickedItem(index)
         }}>
         <ProductCard
-        text='Add to cart'
+        // text='Add to cart'
         prod={item}
         onClick={()=>{}}
         /></div>})}

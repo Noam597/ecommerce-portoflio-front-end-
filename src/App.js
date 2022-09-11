@@ -24,8 +24,9 @@ function App() {
         <CartContext>
           <LandingPage/>
         </CartContext>
-          <Footer/>
+          
       </Router>
+      <Footer/>
     </div>
   );
 }
