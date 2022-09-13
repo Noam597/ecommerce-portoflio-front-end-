@@ -1,6 +1,6 @@
-/* .merch{
-    
-} */
+.cartPage{
+    height: 100vh;
+}
 .merch h1{
    text-align: center;
 }
@@ -51,7 +51,9 @@
     display: none;
 }
 @media (max-width:1024px){
-
+    .cartPage{
+        height: 100%;
+    }
     .cartContainer{
         height: 100%;
         grid-template-columns: auto auto ;
@@ -59,6 +61,9 @@
 
 }
 @media screen and (max-width:438px){
+    .cartPage{
+        height: 100%;
+    }
     .cartContainer{
         height: 100%;
         grid-template-columns: auto ;
