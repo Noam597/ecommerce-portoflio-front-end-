@@ -5,7 +5,6 @@
 }
 .finish{
     margin: 15% auto;
-   
     align-items: center;
     padding: 3rem;
     color: green;
@@ -77,5 +76,8 @@
     .delivery{
         /* margin: 2%; */
         border: none;
+    }
+    .finish{
+        width: 80%;
     }
 }

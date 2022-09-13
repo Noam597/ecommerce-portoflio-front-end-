@@ -54,7 +54,7 @@ const Products = () => {
         </div>
         
           <div className={styles.description}>
-            <img src={product.image} alt='product'/>
+            <img src={product.image} alt={product.alt}/>
         
           <p>   Lorem ipsum odor amet, consectetuer adipiscing elit. Ac purus in massa egestas mollis varius;
               dignissim elementum. Mollis tincidunt mattis hendrerit dolor eros enim, nisi ligula ornare.

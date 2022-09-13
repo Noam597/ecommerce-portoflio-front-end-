@@ -17,6 +17,10 @@ const [deliveryForm, setDeliveryForm] = useState({
     address:'',
 })
  const [fastDelivery, setFastDelivery] = useState(false)
+
+ const screenStyle ={
+    height:sent? "100vh": "100%"
+  }
     const {state:{cart},emptyCart,total,setTotal,navigate} =ShoppingCart()
  
     useEffect(() => {
@@ -57,14 +61,40 @@ const [deliveryForm, setDeliveryForm] = useState({
   }
    
 
-  return (<section style={{height:'100%'}}>
+  return (<section style={screenStyle}>
      <Button text='Back to Cart' onClick={()=>navigate('/ecommerce-portoflio-front-end-/cart')}/>
-     {sent? <div className={styles.finish}>
+     {sent? <div className={styles.finish} >
         <h1><AiOutlineCheckCircle/></h1>
         <h1>YOUR ORDER HAS BEEN SENT</h1>
+        <p  onClick={()=>navigate('/ecommerce-portoflio-front-end-')}><u>BACK TO STORE</u></p>
         </div>
         : <div className={styles.checkOut}>
-        <div className={styles.delivery}>
+       
+        <div className={styles.table}>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    </tr>
+                </thead>
+            <tbody>
+            {cart.map((totalProd,i)=>{
+            return  <tr key={i}>
+                        <td>{totalProd.product}</td>
+                        <td>₪{totalProd.price}</td>
+                        <td>{totalProd.qty}</td>
+                    </tr>
+
+                    })}
+                    <tr>
+                        <td colSpan='3'><h1>GRAND TOTAL :₪{total}</h1></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+             <div className={styles.delivery}>
             <Form>
                 <h1>ORDER FORM</h1>
                 <h3>First Name:</h3>
@@ -111,31 +141,6 @@ const [deliveryForm, setDeliveryForm] = useState({
                 <Button text='SUBMIT' type='submit' onClick={submit}/>
             </Form>
         </div>
-        <div className={styles.table}>
-            <table>
-                <thead>
-                    <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    </tr>
-                </thead>
-            <tbody>
-            {cart.map((totalProd,i)=>{
-            return  <tr key={i}>
-                        <td>{totalProd.product}</td>
-                        <td>₪{totalProd.price}</td>
-                        <td>{totalProd.qty}</td>
-                    </tr>
-
-                    })}
-                    <tr>
-                        <td colSpan='3'><h1>GRAND TOTAL :₪{total}</h1></td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
-            
     </div>}
    
        

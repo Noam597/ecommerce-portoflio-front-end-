@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import styles from './cart.module.css'
 import {Button,SecondButton} from '../button/Button'
 import { ShoppingCart } from '../contexts&reducers/CartContext'
+import { FaCashRegister } from 'react-icons/fa'
 const Cart = () => {
 
 
@@ -29,7 +30,7 @@ const Cart = () => {
 
   return (
     <section >
-        {/* <Button text={!cartPage?'To Cart':'Back to store'} onClick={()=>{setCartPage(!cartPage)}}/> */}
+      
         <Button text={'Back to store'} onClick={()=>{navigate('/ecommerce-portoflio-front-end-')}}/>
         {cart.length === 0?<SecondButton text='Cart Empty'/>
       :<Button text='Checkout'  onClick={()=>{navigate('/ecommerce-portoflio-front-end-/checkout')}}/>}
@@ -42,7 +43,7 @@ const Cart = () => {
       {cart.map((product)=>{
         return <div className={styles.inCart} key={product.id}>
         <div className={styles.inCartImg}>
-          <img src={product.image} alt=''/>
+          <img src={product.image} alt={prod.alt}/>
         </div>
          <div>
         <h2>Quantity: x{product.qty}</h2>
@@ -65,6 +66,10 @@ const Cart = () => {
       {/* } */}
      
       </div> 
+      <div  className={styles.ShoppingButton}>
+        {cart.length > 0 && <button onClick={()=>{navigate('/ecommerce-portoflio-front-end-/checkout')}}>TO CHECKOUT<FaCashRegister/></button>}
+        
+        </div>
     </section>
   )
 }

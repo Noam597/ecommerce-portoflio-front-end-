@@ -47,6 +47,9 @@
     height: 100%;
     object-fit: cover;
 }
+.ShoppingButton{
+    display: none;
+}
 @media (max-width:1024px){
 
     .cartContainer{
@@ -64,6 +67,18 @@
         flex-direction: column;
         width: 96%;
         margin: 2%;
+    }
+    .ShoppingButton{
+        display: block;
+        position: fixed;
+        bottom: 2.5rem;
+        right: 3rem;
+    }
+    .ShoppingButton button{
+       padding: 1rem;
+       border: none;
+       background-color: #63b96a;
+       border-radius: 2rem;
     }
       
     }

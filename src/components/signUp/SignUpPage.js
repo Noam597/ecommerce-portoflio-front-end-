@@ -21,7 +21,9 @@ const SignUpPage = () => {
     const [errors, setErrors] = useState({})
     const {newUser,setNewUser}  = Users()
 
-  
+    const screenStyle ={
+      height:isSignedUp? "100vh": "100%"
+    }
     const submit = (e)=>{
         e.preventDefault()
         const {userName,password,email} = signUp
@@ -42,7 +44,7 @@ const SignUpPage = () => {
     } 
 
   return (
-    <section  style={{height:'100%'}}  onSubmit={submit}>
+    <section  style={screenStyle}  onSubmit={submit}>
  {isSignedUp?<Form>
   <div className={styles.success}>
     <h1><AiOutlineCheckCircle/></h1>

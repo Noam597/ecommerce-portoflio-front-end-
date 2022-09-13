@@ -8,7 +8,8 @@ const ProductCard = ({prod}) => {
   return (
     <div className={`${styles.product} ${styles.out}`}>
       <div className={styles.productImg}>
-        <img src={`${prod.image}`} alt='product'/>
+        {/* <img src={`${prod.image}`} alt='product'/> */}
+        <img src={prod.image} alt={prod.alt}/>
       </div>
        
        <h3>{prod.product}</h3>
@@ -22,7 +23,8 @@ const CartProductCard =({prod,onClick,cart,remove})=>{
   return (
     <div className={`${styles.product} ${styles.in}`}>
       <div className={styles.productImg}>
-        <img src={`${prod.image}`} alt='product'/>
+        {/* <img src={`${prod.image}`} alt='product'/> */}
+        <img src={prod.image} alt={prod.alt}/>
       </div>
         <Rate rating={prod.rate}/>
           <h3>Product: {prod.product}</h3>
