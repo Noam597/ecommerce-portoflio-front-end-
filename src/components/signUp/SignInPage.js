@@ -59,7 +59,7 @@ const SignInPage = () => {
         />
         {errors.userName && <h5 className={styles.error}>{errors.userName}</h5>}
         <Input
-         type='text'
+         type='password'
          name='password'
          subject={signIn}
          setSubject={setSignIn}

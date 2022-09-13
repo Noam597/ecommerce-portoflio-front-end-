@@ -11,7 +11,7 @@ const Footer = () => {
         <li><a href='https://www.facebook.com'><FaFacebook/></a></li>
         <li><a href='https://www.twitter.com'><FaTwitter/></a></li>
         <li><a href='https://www.instagram.com'><FaInstagram/></a></li>
-        <li><a href='https://www.github.com/Noam597'><AiFillGithub/></a></li>
+        <li><a href='https://www.github.com/Noam597/ecommerce-portoflio-front-end-'><AiFillGithub/></a></li>
       </ul>
     </footer>
   )
