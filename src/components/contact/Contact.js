@@ -13,7 +13,7 @@ const submit = (e)=>{
 }
   return (
     <section id='contact' className={styles.contact}>
-        {/* <h1>Contact</h1> */}
+       
         <div className={`${styles.contactForm} ${styles.line}`}>
           <h1>Contact Us</h1>
           <h2>Phone Number: 555-5555</h2>
