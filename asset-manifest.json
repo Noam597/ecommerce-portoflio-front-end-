@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ecommerce-portoflio-front-end-/static/css/main.2bfdc5d4.css",
-    "main.js": "/ecommerce-portoflio-front-end-/static/js/main.bf7b484e.js",
+    "main.js": "/ecommerce-portoflio-front-end-/static/js/main.13011d4e.js",
     "static/js/787.1b1bf50e.chunk.js": "/ecommerce-portoflio-front-end-/static/js/787.1b1bf50e.chunk.js",
     "index.html": "/ecommerce-portoflio-front-end-/index.html",
     "main.2bfdc5d4.css.map": "/ecommerce-portoflio-front-end-/static/css/main.2bfdc5d4.css.map",
-    "main.bf7b484e.js.map": "/ecommerce-portoflio-front-end-/static/js/main.bf7b484e.js.map",
+    "main.13011d4e.js.map": "/ecommerce-portoflio-front-end-/static/js/main.13011d4e.js.map",
     "787.1b1bf50e.chunk.js.map": "/ecommerce-portoflio-front-end-/static/js/787.1b1bf50e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2bfdc5d4.css",
-    "static/js/main.bf7b484e.js"
+    "static/js/main.13011d4e.js"
   ]
 }
