@@ -146,9 +146,9 @@
   
 }
 
-.nav li{
+/* .nav li{
     border-bottom: solid 0.5px white;
-}
+} */
 
 .nav.menu > ul{
     transform: translateY(0);
