@@ -7,6 +7,7 @@ import { Users } from '../contexts&reducers/CartContext';
 import { errorValidator } from '../validator';
 import styles from './signUpPage.module.css'
 import {AiOutlineCheckCircle} from'react-icons/ai'
+import { passwordCheck } from '../validator';
 
 const SignUpPage = () => {
 
@@ -31,10 +32,14 @@ const SignUpPage = () => {
           password.length === 0||
           email.length === 0) {
             setIsSignedUp(false)
-            console.log('add credentials')
             setNewUser(newUser)
             setErrors(errorValidator(signUp))
-        }else{
+        }else if(!passwordCheck.test(password)){
+          setIsSignedUp(false)  
+          setNewUser(newUser)
+          setErrors(errorValidator(signUp))
+        }
+        else{
         setNewUser([...newUser,signUp])
         setIsSignedUp(true)
         }

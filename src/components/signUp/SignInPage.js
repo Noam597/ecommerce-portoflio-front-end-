@@ -37,6 +37,7 @@ const SignInPage = () => {
           navigate('/ecommerce-portoflio-front-end-')
         }else{
           console.log('incorrect')
+          setNoUser('Name/Password Is Incorrect')
         }
     }
     } else{
