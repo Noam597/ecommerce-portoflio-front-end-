@@ -31,7 +31,7 @@ const Cart = () => {
   return (
     <section className={styles.cartPage}>
       
-        <Button text={'Back to store'} onClick={()=>{navigate('/ecommerce-portoflio-front-end-')}}/>
+        <Button text={'Back to store'} onClick={()=>{navigate('/ecommerce-portoflio-front-end-/store')}}/>
         {cart.length === 0?<SecondButton text='Cart Empty'/>
       :<Button text='Checkout'  onClick={()=>{navigate('/ecommerce-portoflio-front-end-/checkout')}}/>}
          <div>

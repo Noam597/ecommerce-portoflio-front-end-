@@ -23,8 +23,7 @@ function App() {
       <Router>
         <CartContext>
           <LandingPage/>
-        </CartContext>
-          
+        </CartContext> 
       </Router>
       <Footer/>
     </div>

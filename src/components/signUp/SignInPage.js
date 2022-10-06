@@ -34,7 +34,7 @@ const SignInPage = () => {
         if(newUser[i].userName === signIn.userName
            && newUser[i].password === signIn.password){
           userLoggedIn()
-          navigate('/ecommerce-portoflio-front-end-')
+          navigate('/ecommerce-portoflio-front-end-/store')
         }else{
           console.log('incorrect')
           setNoUser('Name/Password Is Incorrect')

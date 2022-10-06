@@ -82,7 +82,7 @@ const CheckOutPage = () => {
             <AiOutlineCheckCircle />
           </h1>
           <h1>YOUR ORDER HAS BEEN SENT</h1>
-          <p onClick={() => navigate("/ecommerce-portoflio-front-end-")}>
+          <p onClick={() => navigate("/ecommerce-portoflio-front-end-/store")}>
             <u>BACK TO STORE</u>
           </p>
         </div>
