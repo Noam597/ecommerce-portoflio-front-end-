@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import {Button} from '../button/Button'
 import styles from './header.module.css'
 import {FaBars} from 'react-icons/fa'
@@ -20,7 +20,7 @@ const Header = () => {
           <ul  onClick={()=>{
             setMenu(!menu)
           }}>
-
+   
             <li onClick={()=>{navigate('/ecommerce-portoflio-front-end-')}}>HOME</li>
             <li onClick={()=>{navigate('/ecommerce-portoflio-front-end-/products')}}>PRODUCTS</li>
             <li onClick={()=>{navigate('/ecommerce-portoflio-front-end-/signin')}}>SIGN IN </li>

@@ -23,17 +23,20 @@
     transition: all .45s;
     color: #f0f0f0;
 }
+
 .nav li{
     border-bottom: solid 1px inherit;
     list-style: none;
     padding: 1rem;
     margin:  20px 0 0 20px;
    cursor: pointer;
-   transition: all .95s;
+   border-bottom: solid 1px inherit;
+   transition: all .45s;
    
 }
 .nav li:hover{
     border-bottom: solid 1px white;
+    text-shadow: 0 0 10px white;
 }
 .nav a:hover{
     border-bottom: solid 1px white;
