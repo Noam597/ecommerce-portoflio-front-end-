@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ecommerce-portoflio-front-end-/static/css/main.2bfdc5d4.css",
-    "main.js": "/ecommerce-portoflio-front-end-/static/js/main.3712d010.js",
+    "main.css": "/ecommerce-portoflio-front-end-/static/css/main.cc1d9494.css",
+    "main.js": "/ecommerce-portoflio-front-end-/static/js/main.4f412605.js",
     "static/js/787.1b1bf50e.chunk.js": "/ecommerce-portoflio-front-end-/static/js/787.1b1bf50e.chunk.js",
     "index.html": "/ecommerce-portoflio-front-end-/index.html",
-    "main.2bfdc5d4.css.map": "/ecommerce-portoflio-front-end-/static/css/main.2bfdc5d4.css.map",
-    "main.3712d010.js.map": "/ecommerce-portoflio-front-end-/static/js/main.3712d010.js.map",
+    "main.cc1d9494.css.map": "/ecommerce-portoflio-front-end-/static/css/main.cc1d9494.css.map",
+    "main.4f412605.js.map": "/ecommerce-portoflio-front-end-/static/js/main.4f412605.js.map",
     "787.1b1bf50e.chunk.js.map": "/ecommerce-portoflio-front-end-/static/js/787.1b1bf50e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bfdc5d4.css",
-    "static/js/main.3712d010.js"
+    "static/css/main.cc1d9494.css",
+    "static/js/main.4f412605.js"
   ]
 }
